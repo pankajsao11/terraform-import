@@ -1,3 +1,10 @@
+#before importing
+/*
+resource "aws_instance" "ec2_import" {
+
+}*/
+
+#after importing and updating config file
 resource "aws_instance" "ec2_import" {
   ami                         = "ami-084568db4383264d4"
   instance_type               = "t2.micro"

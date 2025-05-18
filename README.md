@@ -2,7 +2,7 @@
 
 Terraform import is a command that allows you to bring existing infrastructure resources under Terraform's management. It updates Terraform's state file to include resources that were created outside of Terraform, enabling you to manage them as Infrastructure as Code (IaC).
 
-How It Works:
+## How It Works:
 - State Update: The command adds the resource to Terraform's state but does not generate configuration automatically.
 - Manual Configuration: After importing, you need to manually define the resource in your Terraform configuration file.
 - Syntax:
@@ -10,11 +10,11 @@ terraform import <resource_address> <resource_id>
 
 ![import-architecture](https://github.com/user-attachments/assets/a6df3ddb-4df2-4b74-a985-1a219514e295)
 
-Terraform Components
+## Terraform Components
 
 ![image](https://github.com/user-attachments/assets/bd92f38c-272d-42ea-b55e-c6bb9e60c5bd)
 
-Terraform has four main components, as shown in the above image.
+## Terraform has four main components, as shown in the above image.
 
 Terraform CLI – An executable that contains commands for managing resources.
 Configuration File – This is where you define resources using the HCL or JSON language.
@@ -22,7 +22,7 @@ Provider Plugins – These plugins connect to resource providers such as AWS, Az
 State Data – After updating the resources, Terraform updates the state of the resources in the terraform.tfstate file. During the next update, Terraform compares the current state of the resources and the last updated state in the state file to identify the difference. Then, Terraform updates only the difference.
 
 
-Terraform’s typical workflow
+## Terraform’s typical workflow
 How do the above four components connect in Terraform?
 
 ![image](https://github.com/user-attachments/assets/49605597-8133-4ff7-acdd-c33f5edff4e0)
